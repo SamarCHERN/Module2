@@ -6,10 +6,9 @@
 .icone {
     gap:05;
     padding: 20px;
-  
     opacity: 0.5;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 .icone img{
@@ -24,6 +23,9 @@ height: 30x;
     white-space: nowrap;
     position: relative;
 }
+.t1 span{
+    font-size: 15px;
+}
 .card-group .card{
 border: white ;
 padding: 10px;
@@ -31,4 +33,18 @@ padding: 10px;
 .p{
     color: gray;
 }
+nav{
+    display: flex;
+    justify-content: space-around; 
+}
+.nav1{
+    display: flex;
+    justify-content: space-around; 
+    gap: 5px;
+}
+.butt{
+    border:white;
+    background-color: white;
+}
+
 
