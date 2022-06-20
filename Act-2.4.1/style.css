@@ -1,0 +1,92 @@
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+nav button {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+}
+nav button:hover {
+  text-decoration: underline;
+}
+nav button img {
+  width: 25px;
+  height: 25px;
+}
+nav .app {
+  border-radius: 25px;
+}
+nav .app:hover {
+  background-color: rgb(243, 236, 236);
+}
+nav .profile {
+  background-color: rgb(243, 236, 236);
+  border-radius: 25px;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 14px;
+  margin-right: 20px;
+}
+div img {
+  width: 500px;
+  height: 240px;
+}
+div .search-google button {
+  width: 600px;
+  height: 46px;
+  background-color: white;
+  border: 0.5px solid rgb(210, 200, 200);
+  border-radius: 20px 20px;
+  font-size: 12px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.18);
+}
+div .button_google {
+  display: flex;
+  flex-direction: row;
+}
+div .button_google button {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+}
+div .button_google button:hover {
+  background-color: rgb(243, 236, 236);
+}
+
+footer {
+  background-color: rgb(243, 236, 236);
+}
+footer p {
+  color: gray;
+}
+footer .barre {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+footer .barre a {
+  color: gray;
+}
+footer hr {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30px;
+  font-size: 15px;
+  line-height: 40px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.body-code {
+  height: 600px;
+}/*# sourceMappingURL=style.css.map */
