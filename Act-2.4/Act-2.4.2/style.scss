@@ -1,0 +1,323 @@
+@import"navbar";
+
+ $font-stack:'Times New Roman', Times, serif;
+ $font-stack2:arial;
+
+@mixin centeritems(){
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+.content{
+    width: 600px;
+    margin: auto;
+    .final-p{
+        font-size: 12px;
+        color:#666666;
+        span{
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+    img{
+        width: 600px;
+    }
+    h5{
+        margin:0;
+        font-size: 15px;
+        span{
+            text-decoration: underline;
+        }
+    }
+    h6{
+        margin: 0;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    p{
+        font-size: 20px;
+        text-align: justify;
+        a{
+            color:#326891;
+        }
+    }
+    hr{
+        width: 33%;
+    }
+    .thanks{
+        text-align: center;
+        font-size: 15px;
+        margin:15px 0px 15px 0px;
+
+        span{
+            font-weight: bolder;
+        }
+        a{
+            text-decoration: none;
+            color:rgb(50, 104, 145);
+            font-weight: bolder;
+        }
+    }
+    .caption{
+        text-align: start;
+        font-size: 15px;
+        color: #727272;
+    }
+}
+aside{
+    width: 945px;
+    margin: auto;
+    h1{
+        font-weight: 700;
+        margin: 0;
+    }
+    .p1{
+        margin: 0;
+        color:#666666;
+    }
+    div{
+        width: 945px;
+        height: 576px;
+        background-image: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
+        background-size:cover;
+        display: flex;
+        flex-wrap: wrap;
+        gap:10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        p{
+            width: 228px;
+            position: relative;
+            top:135px;
+            font-size: 14px;
+            text-align:left;
+        }
+    }
+    img{
+        width: 945px;
+    }
+}
+
+
+main{
+  
+  @include centeritems;
+  flex-direction: column;
+    
+   h1{
+        font-style: italic;
+        font-family:$font-stack ;
+        font-size: xx-large !important;
+        hr{width: auto;}
+    }
+    h2{
+  
+    font-size:x-large;
+    font-family:$font-stack ;
+    border-top: 2px solid black;
+    align-items: flex-start;
+    }
+    button{
+            border:1px solid rgb(172, 170, 170);
+          box-sizing: border-box;
+          border-radius: 100px;
+          font-size: small;
+          background-color: white;
+         padding:0.5rem
+        }
+        figure{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+           margin-right: 5rem;
+           margin-left: 5rem;
+            align-content: center;
+            align-items: center;
+              img{
+            width: 1300px;
+            margin-top:2rem;
+                
+        }
+    span{
+        color: grey;
+        align-self: flex-start;
+    
+    } }
+ 
+    .bi{
+        width:20px;
+    }
+
+
+    #centerbutton{
+    margin-bottom: 2rem;
+    background-color:rgb(60, 91, 119);
+    border: 1px solid rgb(39, 58, 77);
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 600px;
+    font-size: small;
+    color:white; 
+}
+p{
+font-family:  $font-stack2;
+width: 600px;
+}
+
+ul{
+    width: 600px;
+  font-family:  $font-stack2;
+li{
+   
+    padding-top: 1rem;
+    a{
+        color:rgb(60, 91, 119);
+    }
+}
+}
+}
+// body{
+    
+    .cards-body{
+        display: flex;
+        margin-left: 30px;
+        margin-left: 30px;
+        padding-left: 200px;
+        padding-right: 200px;
+
+    // }
+    .cards{
+        margin-right: 5px;
+        border-top:1px solid black;
+    }
+    .card{
+        border: none;
+        margin: 15px;
+    }
+    .titre{
+     
+      width: 700px;
+    }
+    .card-title {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        color: gray;
+        font-size: x-small;
+    }
+    .p{
+        color: gray ;
+
+    }
+ 
+    a{
+        font-family: 'Times New Roman', Times, serif;
+        &:link { text-decoration: none; 
+        color: black;
+        &:hover{
+            opacity: 0.5;;
+        }}
+    }
+    a.titre{
+        :hover{
+            text-decoration:underline;
+        }
+    }
+    img{
+        width:200;
+        height:150px;
+    }
+    a.a{
+        font-size: 1.1875rem;
+    line-height: 1.4375rem;
+    }
+}
+
+
+
+*{
+    margin: 0;
+}
+.content-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.75rem;
+    margin-right: 200px;
+    margin-left: 200px;
+    h1{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        
+    }
+    img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    p{
+        align-self: flex-start;
+        padding-right: 30%;
+        margin-bottom: 20px;
+        color: darken($color: #1a1919f6, $amount: 80%);
+    }
+    .toolBar{
+        display: flex;
+    }
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    
+    .footer-item{
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        a{
+            text-decoration: none;
+            color: black;
+            padding-bottom: 5px;
+            &:hover{
+                text-decoration-line: underline;
+            }
+        }
+    }
+    .subscribe{
+        padding-left: 5px;
+        border-left: 2px solid rgba(237, 233, 233, 0.913);
+    }
+    h4{
+        padding-bottom: 10px;
+    }
+    
+}
+footer{
+    margin-left: 200px;
+    margin-right: 200px;
+    border-top: 2px solid rgba(237, 233, 233, 0.913);
+    .footer-bot{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 12px;
+        padding-top: 5px;
+        border-top: 2px solid rgba(237, 233, 233, 0.913);
+        a{
+            text-decoration: none;
+            color: black;
+            padding-bottom: 5px;
+            &:hover{
+                text-decoration-line: underline;
+            }
+        }
+    }
+}
