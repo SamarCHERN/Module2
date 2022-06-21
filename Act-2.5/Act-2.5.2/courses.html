@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Courses</title>
+  </head>
+  <body>
+    <input type="text" id="ideas">
+    <input type="submit" value="submit" id="submit">
+    <div id="resultat">
+        <ul></ul>
+    </div>
+<script>
+    let resultat = document.getElementById("resultat");
+    let submit = document.getElementById("submit");
+    let input = document.getElementById("ideas");
+
+    submit.addEventListener('click',()=>{
+        resultat.innerHTML += "<li>" + input.value + "</li>";
+        input.value="";
+    })
+</script>
+</body>
+</html>
